@@ -121,7 +121,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/21/Random%20Erasing%20Data%20Augmentation/Random%20Erasing%20Algorithm.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/21/Random%20Erasing%20Data%20Augmentation/图像分类和行人再识别.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/21/Random%20Erasing%20Data%20Augmentation/目标检测.png">
-<meta property="og:updated_time" content="2018-03-21T11:14:05.684Z">
+<meta property="og:updated_time" content="2018-03-21T12:30:17.084Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Random Erasing Data Augmentation">
 <meta name="twitter:description" content="Author: Zhun Zhong, Liang Zheng, Guoliang Kang, Shaozi Li, Yi Yang Time: 2017 CVPR 文章概况贡献1.提出了一个新的数据增强的方法来训练卷积神经网络，叫做随机擦除（Random Erasing）。 2.这种数据增强的方法可以增加很多带有遮挡的数据，能够降低过拟合的风险并且使得模型对遮挡具有鲁邦性。 3.提出的方法属于轻">
@@ -354,6 +354,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/21/Random Erasing Data Augmentation/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/03/21/Random Erasing Data Augmentation/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -536,7 +546,12 @@
 
   
     <div class="comments" id="comments">
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
     </div>
+
   
 
 
@@ -858,6 +873,52 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: '12da4ed2a514657ab7ed',
+            repo: 'e01b63688c991afdef7369f52168743a4097f234',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'your secret',
+            
+                client_id: 'your ID for github'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
+    
 
 
 
